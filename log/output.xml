@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211029 16:00:14.404" rpa="false" schemaversion="2">
+<suite id="s1" name="validatMoreEleganc" source="C:\Users\Theo IT\OneDrive\Área de Trabalho\SkillsLibrary\QA\QANinjaRobotPythonSelenium\automatsecortezauditmoreeffictotester\tests\validatMoreEleganc.robot">
+<test id="s1-t1" name="Cadastro com sucesso">
+<kw name="New Session" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211029 16:00:14.743" level="INFO">Opening browser 'chrome' to base url 'https://www.secortezaraujo.com.br'.</msg>
+<status status="PASS" starttime="20211029 16:00:14.743" endtime="20211029 16:00:18.158"/>
+</kw>
+<status status="PASS" starttime="20211029 16:00:14.742" endtime="20211029 16:00:18.159"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/contato</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211029 16:00:18.159" level="INFO">Opening url 'https://www.secortezaraujo.com.br/contato'</msg>
+<status status="PASS" starttime="20211029 16:00:18.159" endtime="20211029 16:00:18.520"/>
+</kw>
+<kw name="Fill With">
+<arg>Theo Nicolas</arg>
+<arg>theonicolas@gmail.com</arg>
+<arg>11988776655</arg>
+<arg>It should be a success test</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[id="input_comp-k8cl409c"]</arg>
+<arg>${nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:18.523" level="INFO">Typing text 'Theo Nicolas' into text field 'css:input[id="input_comp-k8cl409c"]'.</msg>
+<status status="PASS" starttime="20211029 16:00:18.522" endtime="20211029 16:00:18.754"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[id=input_comp-k8cl409e1]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:18.755" level="INFO">Typing text 'theonicolas@gmail.com' into text field 'css:input[id=input_comp-k8cl409e1]'.</msg>
+<status status="PASS" starttime="20211029 16:00:18.754" endtime="20211029 16:00:18.924"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[id='input_comp-k8cl409g']</arg>
+<arg>${cel}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:18.926" level="INFO">Typing text '11988776655' into text field 'css:input[id='input_comp-k8cl409g']'.</msg>
+<status status="PASS" starttime="20211029 16:00:18.924" endtime="20211029 16:00:19.126"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=textarea_comp-k8cl409h2</arg>
+<arg>${msg}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:19.127" level="INFO">Typing text 'It should be a success test' into text field 'id=textarea_comp-k8cl409h2'.</msg>
+<status status="PASS" starttime="20211029 16:00:19.126" endtime="20211029 16:00:19.304"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:_1fbEI</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:19.304" level="INFO">Clicking element 'class:_1fbEI'.</msg>
+<status status="PASS" starttime="20211029 16:00:19.304" endtime="20211029 16:00:19.743"/>
+</kw>
+<status status="PASS" starttime="20211029 16:00:18.521" endtime="20211029 16:00:19.744"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Obrigado pelo envio!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211029 16:00:19.788" level="INFO">Current page contains text 'Obrigado pelo envio!'.</msg>
+<status status="PASS" starttime="20211029 16:00:19.744" endtime="20211029 16:00:19.789"/>
+</kw>
+<kw name="End Session" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211029 16:00:19.950" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211029 16:00:19.790" endtime="20211029 16:00:19.951"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211029 16:00:19.951" endtime="20211029 16:00:22.232"/>
+</kw>
+<status status="PASS" starttime="20211029 16:00:19.789" endtime="20211029 16:00:22.233"/>
+</kw>
+<tag>success</tag>
+<status status="PASS" starttime="20211029 16:00:14.741" endtime="20211029 16:00:22.235"/>
+</test>
+<test id="s1-t2" name="Cadastro com e-mail inválido">
+<kw name="New Session" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211029 16:00:22.244" level="INFO">Opening browser 'chrome' to base url 'https://www.secortezaraujo.com.br'.</msg>
+<status status="PASS" starttime="20211029 16:00:22.244" endtime="20211029 16:00:24.772"/>
+</kw>
+<status status="PASS" starttime="20211029 16:00:22.242" endtime="20211029 16:00:24.773"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/contato</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211029 16:00:24.774" level="INFO">Opening url 'https://www.secortezaraujo.com.br/contato'</msg>
+<status status="PASS" starttime="20211029 16:00:24.773" endtime="20211029 16:00:25.141"/>
+</kw>
+<kw name="Fill With">
+<arg>Theo Nicolas</arg>
+<arg>theonicolas.com.br</arg>
+<arg>11988776655</arg>
+<arg>It should be an error test</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[id="input_comp-k8cl409c"]</arg>
+<arg>${nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:25.143" level="INFO">Typing text 'Theo Nicolas' into text field 'css:input[id="input_comp-k8cl409c"]'.</msg>
+<status status="PASS" starttime="20211029 16:00:25.143" endtime="20211029 16:00:25.426"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[id=input_comp-k8cl409e1]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:25.427" level="INFO">Typing text 'theonicolas.com.br' into text field 'css:input[id=input_comp-k8cl409e1]'.</msg>
+<status status="PASS" starttime="20211029 16:00:25.426" endtime="20211029 16:00:25.585"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:input[id='input_comp-k8cl409g']</arg>
+<arg>${cel}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:25.586" level="INFO">Typing text '11988776655' into text field 'css:input[id='input_comp-k8cl409g']'.</msg>
+<status status="PASS" starttime="20211029 16:00:25.585" endtime="20211029 16:00:25.728"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=textarea_comp-k8cl409h2</arg>
+<arg>${msg}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:25.729" level="INFO">Typing text 'It should be an error test' into text field 'id=textarea_comp-k8cl409h2'.</msg>
+<status status="PASS" starttime="20211029 16:00:25.728" endtime="20211029 16:00:25.902"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:_1fbEI</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 16:00:25.903" level="INFO">Clicking element 'class:_1fbEI'.</msg>
+<status status="PASS" starttime="20211029 16:00:25.902" endtime="20211029 16:00:26.000"/>
+</kw>
+<status status="PASS" starttime="20211029 16:00:25.142" endtime="20211029 16:00:26.000"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Insira um endereço de email válido.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211029 16:00:26.482" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211029 16:00:26.216" endtime="20211029 16:00:26.483"/>
+</kw>
+<msg timestamp="20211029 16:00:26.489" level="FAIL">Page should have contained text 'Insira um endereço de email válido.' but did not.</msg>
+<status status="FAIL" starttime="20211029 16:00:26.000" endtime="20211029 16:00:26.490"/>
+</kw>
+<kw name="End Session" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211029 16:00:26.845" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211029 16:00:26.491" endtime="20211029 16:00:26.845"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211029 16:00:26.846" endtime="20211029 16:00:29.084"/>
+</kw>
+<status status="PASS" starttime="20211029 16:00:26.491" endtime="20211029 16:00:29.084"/>
+</kw>
+<tag>error404</tag>
+<status status="FAIL" starttime="20211029 16:00:22.240" endtime="20211029 16:00:29.085">Page should have contained text 'Insira um endereço de email válido.' but did not.</status>
+</test>
+<status status="FAIL" starttime="20211029 16:00:14.406" endtime="20211029 16:00:29.088"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">error404</stat>
+<stat pass="1" fail="0" skip="0">success</stat>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="validatMoreEleganc">validatMoreEleganc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
